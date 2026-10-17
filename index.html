@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ryan Taylor — Projects</title>
+  <meta name="description" content="Portfolio of Ryan Taylor (ryanstormrage): data tools, trackers and web projects built with Python, C#, SQL, HTML and CSS.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <a class="brand" href="#top">rt<span>.</span></a>
+      <div class="nav-links">
+        <a href="#featured">Featured</a>
+        <a href="#repos">All repos</a>
+        <a href="#about">About</a>
+        <a id="gh-link" href="https://github.com/ryanstormrage" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </nav>
+
+    <div class="hero-body" id="top">
+      <p class="eyebrow mono">// Management Information Systems · Python · C# · SQL</p>
+      <h1>Ryan Taylor builds <em>small tools</em> around real data.</h1>
+      <p class="lede">
+        Python, C#, SQL and the web. I like taking a public data source, whether that's game stats,
+        esports results, airfares, bus schedules or federal flight records, and turning it into something you can actually read.
+      </p>
+      <div class="stats" id="stats">
+        <div><strong id="stat-repos">—</strong><span>public repos</span></div>
+        <div><strong id="stat-langs">—</strong><span>languages</span></div>
+        <div><strong id="stat-updated">—</strong><span>last push</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="featured" class="section">
+      <div class="section-head">
+        <h2>Featured projects</h2>
+        <p class="muted">A web app, Python data pipelines, a C# console app, and SQL analysis of public transportation data. This site itself is plain HTML, CSS and JavaScript.</p>
+      </div>
+      <div class="featured-grid" id="featured-grid"></div>
+    </section>
+
+    <section id="repos" class="section">
+      <div class="section-head row">
+        <div>
+          <h2>Everything on GitHub</h2>
+          <p class="muted">Pulled live from the GitHub API each time this page loads.</p>
+        </div>
+        <div class="filters" id="filters" role="group" aria-label="Filter by language"></div>
+      </div>
+      <div class="repo-grid" id="repo-grid">
+        <p class="muted mono">Loading repositories…</p>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <h2>About</h2>
+      <p>
+        I'm studying Management Information Systems and spend my spare time building things that sit between
+        business and code. The projects above are deliberately lightweight: no frameworks, few dependencies,
+        each one runnable in a couple of commands.
+      </p>
+      <p class="mono muted">Python · C# / .NET · SQL (SQLite, SQL Server) · HTML / CSS / JavaScript · Git</p>
+    </section>
+  </main>
+
+  <footer class="footer mono">
+    <span>© <span id="year"></span> Ryan Taylor</span>
+    <a href="https://github.com/ryanstormrage" target="_blank" rel="noopener">github.com/ryanstormrage</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
